@@ -1,0 +1,28 @@
+name: napari-laptrack
+display_name: Laptrack Tracking
+contributions:
+  commands:
+    - id: napari-laptrack.make_sample_data
+      python_name: napari_laptrack._sample_data:make_sample_data
+      title: Load sample data from Laptrack Tracking
+    - id: napari-laptrack.make_qwidget
+      python_name: napari_laptrack._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: napari-laptrack.make_magic_widget
+      python_name: napari_laptrack._widget:example_magic_widget
+      title: Make example magic widget
+    - id: napari-laptrack.make_func_widget
+      python_name: napari_laptrack._widget:example_function_widget
+      title: Make example function widget
+  sample_data:
+    - command: napari-laptrack.make_sample_data
+      display_name: Laptrack Tracking
+      key: unique_id.1
+  widgets:
+    - command: napari-laptrack.make_qwidget
+      display_name: Example QWidget
+    - command: napari-laptrack.make_magic_widget
+      display_name: Example Magic Widget
+    - command: napari-laptrack.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget
